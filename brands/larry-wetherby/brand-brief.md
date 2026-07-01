@@ -6,7 +6,7 @@
 ## Business
 Residential real estate agent with ERA Reardon Realty, full-service (buyers, sellers, first-time buyers, move-up clients) based in Brooklyn, MI, in the heart of the Irish Hills. Markets across Jackson, Lenawee, Hillsdale, and Washtenaw counties — a region with a lot of lakes, so waterfront/lake property deals come up often. Also handles commercial, vacant land, and farm/business-opportunity real estate.
 
-Differentiator: over three decades of experience supplying lumber and building materials to area builders and homeowners before becoming a Realtor, and still holds a State of Michigan Residential Builder's License. That's a real edge — he can talk construction quality, not just curb appeal.
+Note: Larry has been out of active real estate for a little while and is ramping back up — don't lean heavily on "30 years of experience" as the main pitch, it can read as stale. His background supplying lumber/building materials (and Michigan Residential Builder's License) is real, but the stronger, more current proof point is personal: he lives on a lake himself and personally oversaw the remodel of his own home. That's lived, present-tense expertise, not a resume line.
 
 Contact: 517-206-2294 / Larry@LarryWetherby.com
 
@@ -25,7 +25,8 @@ Most agents are order-takers — they just open doors and take a cut. Real value
 - Worked long-distance with a client still living in California — constant email/phone communication, no in-person handholding needed.
 - Took the listing photos himself for a property; the photos "made it shine" and it sold and closed in 6 weeks.
 - Spent almost a year working with one client to find the exact property that met all their criteria — patience over pressure.
-- Has a Builder's License background (30+ years supplying lumber/materials before real estate) — can spot construction issues other agents miss.
+- Has a Builder's License background (supplying lumber/materials before real estate) — can spot construction issues other agents miss. Use sparingly, in support of the current lake-home story, not as the headline.
+- Lives on a lake himself and personally oversaw the remodel of his own home — this is the strongest, most current proof point of hands-on knowledge. Use this as the anchor detail for waterfront/renovation-related posts.
 - [Add more over time]
 
 ## Local Content Hooks (Irish Hills / Brooklyn, MI events + seasonal angles)

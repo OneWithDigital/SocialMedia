@@ -4,7 +4,11 @@
 > Update this file as the business evolves.
 
 ## Business
-Residential real estate agent with ERA, full-service (buyers, sellers, first-time buyers, move-up clients) in the Brooklyn, Michigan / Irish Hills area — a region with a lot of lakes, so waterfront/lake property deals come up often.
+Residential real estate agent with ERA Reardon Realty, full-service (buyers, sellers, first-time buyers, move-up clients) based in Brooklyn, MI, in the heart of the Irish Hills. Markets across Jackson, Lenawee, Hillsdale, and Washtenaw counties — a region with a lot of lakes, so waterfront/lake property deals come up often. Also handles commercial, vacant land, and farm/business-opportunity real estate.
+
+Differentiator: over three decades of experience supplying lumber and building materials to area builders and homeowners before becoming a Realtor, and still holds a State of Michigan Residential Builder's License. That's a real edge — he can talk construction quality, not just curb appeal.
+
+Contact: 517-206-2294 / Larry@LarryWetherby.com
 
 ## Customer
 Varies by deal: first-time home buyers who need hand-holding through the process, move-up sellers/buyers focused on timing and equity, and buyers/sellers of lake and waterfront homes in the Irish Hills area specifically.
@@ -17,7 +21,20 @@ Most agents are order-takers — they just open doors and take a cut. Real value
 
 ## Story Vault
 - Recently closed a waterfront/lake home sale in the Irish Hills area — [add specific details: address/area, days on market, sale price or over-asking amount, what made it notable].
+- Helped a client find their Lake Columbia waterfront dream house during COVID, keeping the process smooth despite pandemic disruptions.
+- Worked long-distance with a client still living in California — constant email/phone communication, no in-person handholding needed.
+- Took the listing photos himself for a property; the photos "made it shine" and it sold and closed in 6 weeks.
+- Spent almost a year working with one client to find the exact property that met all their criteria — patience over pressure.
+- Has a Builder's License background (30+ years supplying lumber/materials before real estate) — can spot construction issues other agents miss.
 - [Add more over time]
+
+## Local Content Hooks (Irish Hills / Brooklyn, MI events + seasonal angles)
+- **Michigan International Speedway (MIS)** race weekends (Irish Hills) — big seasonal driver of traffic, short-term rental interest, and "sell before/buy after race season" timing angles.
+- **Taste of the Irish Hills** — annual Chamber of Commerce food event (spring).
+- **Irish Hills Music Festival** — nonprofit music festival benefiting local charities.
+- **Big Fam Music & Arts Festival** — Sept 25-27, 2026, at The Groves of Michigan, Brooklyn, MI — major new draw to the area, good "look what's happening in our backyard" community post.
+- **Village of Brooklyn community calendar** (villageofbrooklyn.com) — ongoing source of local happenings to tie posts to.
+- Irish Hills Chamber of Commerce (irishhills.com) maintains a running events calendar — worth checking each month for fresh local hooks.
 
 ## Voice
 Warm and personal + expert and authoritative — friendly and relationship-first, with confident local market knowledge (especially lake/waterfront properties).

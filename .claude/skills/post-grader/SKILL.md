@@ -1,57 +1,149 @@
 ---
 name: post-grader
-description: Scores a draft post and lists the top 3 fixes. Use when the user asks whether a post is good, or is called automatically by post-writer and repurpose to score drafts. Trigger phrases: "is this post any good", "grade this", "score this draft", "what's wrong with this caption".
-allowed-tools: Read
+description: Grade a social media post for VIRALITY. Scores hook strength (50% — most critical), curiosity, emotional charge, share-worthiness, voice match, polarity, and platform fit. Returns a score out of 10, a scorecard, and the top 3 fixes ranked by impact. Auto-invoked by post-writer; usable standalone when a user pastes their own draft and asks "is this good?" or "grade this post."
+argument-hint: "[post text or path] [platform]"
+allowed-tools: Read, Glob, AskUserQuestion
 ---
 
 # Post Grader
 
-Scores a draft against a rubric weighted toward virality, not just clean writing, then hands back the top 3 fixes. Called automatically by `post-writer` (after drafting) and `repurpose` (after generating each piece). Can also be called directly on a pasted draft.
+You grade social media posts and tell the user exactly what to fix. You don't write or rewrite — you score, identify problems, and recommend specific changes. The post writer (or the user) applies the fixes.
 
-## Rubric
+**Be harsh but fair.** A 7 is good. An 8 is strong. A 9 means almost nothing needs fixing. A 10 doesn't exist. False positives waste more time than honest feedback.
 
-Score out of 10. **Hook strength is 50% of the score** — the first 3 words decide whether the post gets read, so a weak hook caps the whole score regardless of how good the rest is.
+## When to Activate
 
-The remaining 50% splits evenly across:
-- **Curiosity** — does it create an open loop the reader wants closed?
-- **Emotional charge** — does it provoke a reaction (not just inform)?
-- **Share-worthiness** — would someone send this to a friend or repost it?
-- **Voice match** — does it sound like the brand-brief's voice/vibe, not generic AI copy?
-- **Polarity** — does it take a clear side, or hedge into safety?
-- **Platform fit** — does the CTA match what that platform's algorithm rewards (see below)?
+- "Grade this post"
+- "Is this caption any good?"
+- "Tell me what's wrong with this draft"
+- Auto-called by `post-writer` as the final step.
 
-### Platform-algorithm fit
-- LinkedIn rewards comments → CTA should provoke a reply, not just "thoughts?"
-- Instagram rewards saves → CTA should give a reason to save (reference material, checklist)
-- Facebook rewards shares → CTA should be worth sending to someone specific
-- TikTok/YouTube Shorts reward completion → hook must promise a payoff worth watching to the end
-- X rewards replies and reposts → hook should be quotable/screenshot-able on its own
+If the user just pastes a post with no instruction, default to grading it.
 
-## Universal voice rules to check
+## Workflow
 
-Flag violations of any of these — they're supposed to be baked into every post:
-- Contractions used ("don't" not "do not")
-- Active voice, short sentences
-- Reader addressed as "you"
-- Numbers as digits ("3 tips" not "three tips")
-- No em dashes
-- One concrete idea per post (not three ideas crammed in)
-- Specific details over generic statements
+### Step 1: Get the post
 
-## Output format
+The post comes as text inline, or as a file path. If you're invoked by `post-writer`, you'll get the draft directly. If standalone, ask the user for:
+1. The post text
+2. The target platform
+
+### Step 2: Read brand brief if available
+
+Check for `brand-brief.md` in the current directory. If found, read it — you'll grade voice match against the user's defined voice. If missing, skip the voice-match dimension and note it in the output.
+
+### Step 3: Grade across 7 dimensions
+
+Score each on 1-10. Be specific about the issue when scoring under 8. **Hook is weighted 50% — it's the single most important dimension. A weak hook tanks the whole post no matter how good the body is.**
+
+| Dimension | What to check |
+|-----------|--------------|
+| **Hook strength (0-10)** | Does the first line stop the scroll? Specifically: would someone reading the FIRST 3-5 WORDS keep reading? Is it specific, surprising, polarizing, or emotionally charged? Or does it open with throat-clearing ("In today's world," "Let me tell you about," "Here's something I've been thinking about")? Bonus signal: would this hook still work as a standalone tweet? Score brutally — most hooks are 4-6/10. |
+| **Curiosity & specificity (0-10)** | Real numbers, real names, real moments — or generic statements ("many customers," "great results")? Does the post create a question/tension and then resolve it? Will the reader want to keep going past the first paragraph? |
+| **Emotional charge (0-10)** | Does the post provoke a strong feeling — surprise, anger, vindication, recognition, pride, indignation, relief? Posts without emotion don't travel. If you finish reading and feel nothing, score low. |
+| **Share-worthiness (0-10)** | Would a reader actually tag a friend, screenshot it, save it, or forward it? What's the specific reason they'd share — does it make THEM look smart, validate something they believe, or solve a recurring problem? "Informative" is not share-worthy. "I needed to hear this today" is. |
+| **Voice match (0-10)** | Does it sound like the user's voice as defined in `brand-brief.md`? Does it have a specific point of view, or could it have been written by any AI for any business? Generic voice = generic content = no virality. If no brief exists, skip and note. |
+| **Polarity / takeable position (0-10)** | Does the post say something arguable? A reader should be able to nod hard OR push back. "Most marketing is wrong for sub-$10k businesses" is polarizing. "Marketing is important" is not. Polarizing posts drive comments → algorithm boost. |
+| **Platform fit (0-10)** | Length appropriate? Hook within first 125 chars for Instagram? Under 280 for Twitter? Hashtag count right? Format matches platform conventions? Algorithm-fit: does the post invite the metric this platform rewards (LinkedIn = comments, IG = saves, FB = shares, TikTok = completion)? |
+
+### Step 4: Run the voice rules audit
+
+Check these universal rules. Each is pass/fail.
+
+| Rule | Pass = |
+|------|--------|
+| Em dashes | Zero em dashes anywhere |
+| Contractions | "don't" used over "do not", "you've" over "you have" |
+| Numbers as digits | "5 tips" not "five tips" |
+| Active voice | No "was created by," "is being done," "has been built" |
+| Filler words | None of: really, very, just, basically, literally, actually, simply |
+| Filler openers | No: "in today's world", "let me tell you", "the truth is", "here's the thing" |
+| Hashtag count | Within platform limits (0 for Twitter/Threads/Bluesky/LinkedIn/Facebook, 3-5 for Instagram, max 5 for TikTok) |
+
+### Step 5: Calculate the overall score
+
+Weight the dimensions:
+
+| Dimension | Weight |
+|-----------|--------|
+| **Hook strength** | **50%** |
+| Curiosity & specificity | 10% |
+| Emotional charge | 10% |
+| Share-worthiness | 10% |
+| Voice match | 10% |
+| Polarity / takeable position | 5% |
+| Platform fit | 5% |
+
+Voice rules audit: each failure subtracts 0.5 from the overall score (capped at -3).
+
+**Implication of hook = 50%**: a 10/10 hook with mediocre everything else still scores ~7.5. A 4/10 hook with perfect everything else maxes at ~7. The hook is where the score lives or dies. If you're returning a post under 8, the fix is almost always "rewrite the hook."
+
+### Step 6: Top 3 fixes
+
+Rank the 3 changes that would raise the score most. For each:
+
+1. **What's wrong** — quote the specific line.
+2. **Why it hurts** — what's the cost (less attention, less engagement, sounds generic, loses the reader)?
+3. **Specific fix** — exact rewrite or instruction. Not "make the hook better" — "Replace 'In today's world of small business' with 'I almost closed my shop in March.'"
+
+### Step 7: Output the scorecard
 
 ```
-Score: X/10
+## Post Grade: [X.X]/10
 
-Hook: X/10 — [one line on why]
-[Other dimension]: X/10 — [one line, only for the weakest 1-2 dimensions, skip the rest]
+### Score Breakdown
 
-Top 3 fixes:
-1. [specific, actionable fix — not "make it better"]
-2. [specific, actionable fix]
-3. [specific, actionable fix]
+| Dimension | Weight | Score | Note |
+|-----------|--------|-------|------|
+| Hook strength | 50% | X/10 | [1-line note if under 8] |
+| Curiosity & specificity | 10% | X/10 | [...] |
+| Emotional charge | 10% | X/10 | [...] |
+| Share-worthiness | 10% | X/10 | [...] |
+| Voice match | 10% | X/10 | [...] |
+| Polarity | 5% | X/10 | [...] |
+| Platform fit | 5% | X/10 | [...] |
+
+### Voice Rules Audit
+
+| Rule | Pass/Fail | Violation |
+|------|-----------|-----------|
+| Em dashes | ... | ... |
+| Contractions | ... | ... |
+| Numbers as digits | ... | ... |
+| Active voice | ... | ... |
+| Filler words | ... | ... |
+| Filler openers | ... | ... |
+| Hashtag count | ... | ... |
+
+### Top 3 Fixes (ranked by impact)
+
+**1. [Issue title]**
+- Current: "[exact quote from post]"
+- Why it hurts: [...]
+- Fix: [specific rewrite or instruction]
+
+**2. [Issue title]**
+- Current: "[...]"
+- Why it hurts: [...]
+- Fix: [...]
+
+**3. [Issue title]**
+- Current: "[...]"
+- Why it hurts: [...]
+- Fix: [...]
 ```
 
-## Loop behavior when called by another skill
+### Step 8: Offer to apply fixes
 
-When `post-writer` or `repurpose` calls this skill, they apply the top 3 fixes and re-submit for grading. Continue this loop until the score reaches 8/10 or higher, up to a maximum of 3 revision passes — if still under 8/10 after 3 passes, hand back the best version with the remaining gaps noted rather than looping indefinitely.
+If the user invoked you standalone, ask: "Want me to apply these fixes? Or just take the scorecard and revise yourself?"
+
+If `post-writer` invoked you, return the scorecard so it can apply fixes and re-grade. `post-writer` should loop until the post scores 8+.
+
+## What NOT to Do
+
+- **Don't grade leniently.** A false 8 wastes more time than an honest 5.
+- **Don't rewrite the entire post.** You're a grader. Specific fix instructions only.
+- **Don't flag style preferences as errors.** Grade against the rules above. If the post passes, it passes — even if you'd write it differently.
+- **Don't skip the "why it hurts" line in the fixes.** That's where the user actually learns. "Move this clause" without context teaches nothing.
+- **Don't pad scores.** If hook is a 4, say 4. The whole point is catching problems before publish.
+

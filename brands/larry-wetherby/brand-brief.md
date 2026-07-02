@@ -32,8 +32,17 @@ Most agents are order-takers — they just open doors and take a cut. Real value
 ## YouTube Content (larrywetherby, individual video links only — channel/listing pages aren't fetchable)
 - One video found: "Home Buyer Tip: Don't Just Buy the House, Buy the Lifestyle" (youtube.com/shorts/6urAxXr04-8). Core message: ask about traffic levels and proximity to amenities before buying, look beyond your initial target area, and think about lifestyle fit, not just the house itself. Friendly, supportive tone, mentions serving Jackson, Lenawee, Hillsdale counties and Irish Hills.
 - This "buy the lifestyle, not just the house" angle is a strong, reusable theme, distinct from the waterfront/builder wedge, good for buyer-focused (rather than seller-focused) posts.
-- There's a **lake tour video series** (part of a YouTube playlist). Found so far: "Wamplers Lake Tour" — covers Wamplers Lake as a ~780-acre all-sports lake in the Irish Hills, good fishing year-round, Walter J. Hayes State Park, a campground, a boat launch, and local dining (Jerry's Pub, known for lake views/live entertainment). This is a strong repeatable content pillar: one post per lake in the area, pairing local lifestyle detail with a soft real-estate CTA. Send more videos from this playlist to build out the full list of lakes covered.
-- To pull more videos in, share individual video links (shorts or full videos) rather than the channel page, since the channel listing page isn't accessible.
+- There's a **"Lake Guide" video series** on the channel (one video per lake). This is a strong repeatable content pillar: local lifestyle detail + recreation + a soft real estate CTA, per lake. Roster found so far:
+  - **Wamplers Lake** — ~780-acre all-sports lake, year-round fishing, Walter J. Hayes State Park, campground, boat launch, Jerry's Pub (lake views/live entertainment).
+  - **Loch Erin** — private, man-made all-sports lake, mostly newer homes (built since the 1980s), no public access (privacy draw).
+  - **Lake LeAnn** (Jerome, MI) — private all-sports lake, split into north/south sections, has its own island; near Crystal, Perch, Mirror, and Somerset lakes.
+  - **Devils Lake & Round Lake** (Manitou Beach) — big draw for Toledo/NW Ohio visitors, sandbar, water sports, strong generational/return-visitor ties.
+  - **Clark Lake** — premier all-sports lake, clear water, sandy shorelines, two restaurants plus a full-service marina, active community (sailing, fishing, even winter activity).
+  - **Sand Lake & Evans Lake** (Jackson) — wooded shorelines, vacation destination dating back to the 1800s.
+  - **Big Wolf Lake** (with Little Wolf and Allcott Lakes) — part of a 10-lake interconnected Grand River chain in SE Jackson County, navigable by water with some low-bridge access quirks.
+  - **Lake Columbia** (Brooklyn, MI) — ~840-acre man-made private lake, HOA-run with garbage collection/association parks, lake access restricted to Property Owners Association members. (This is the same lake from the Story Vault's COVID-era client story below.)
+  - **Farwell Lake & Round Lake** (Liberty Township) — Farwell's pristine water, Round Lake's distinct turquoise color, cottages to custom homes.
+- To pull more videos in, share individual video links (shorts or full videos) rather than the channel page, since the channel/playlist listing pages aren't accessible.
 
 ## Local Content Hooks (Irish Hills / Brooklyn, MI events + seasonal angles)
 - **Michigan International Speedway (MIS)** race weekends (Irish Hills) — big seasonal driver of traffic, short-term rental interest, and "sell before/buy after race season" timing angles.

@@ -29,6 +29,11 @@ Most agents are order-takers — they just open doors and take a cut. Real value
 - Lives on a lake himself and personally oversaw the remodel of his own home — this is the strongest, most current proof point of hands-on knowledge. Use this as the anchor detail for waterfront/renovation-related posts.
 - [Add more over time]
 
+## YouTube Content (larrywetherby, individual video links only — channel/listing pages aren't fetchable)
+- One video found: "Home Buyer Tip: Don't Just Buy the House, Buy the Lifestyle" (youtube.com/shorts/6urAxXr04-8). Core message: ask about traffic levels and proximity to amenities before buying, look beyond your initial target area, and think about lifestyle fit, not just the house itself. Friendly, supportive tone, mentions serving Jackson, Lenawee, Hillsdale counties and Irish Hills.
+- This "buy the lifestyle, not just the house" angle is a strong, reusable theme, distinct from the waterfront/builder wedge, good for buyer-focused (rather than seller-focused) posts.
+- To pull more videos in, share individual video links (shorts or full videos) rather than the channel page, since the channel listing page isn't accessible.
+
 ## Local Content Hooks (Irish Hills / Brooklyn, MI events + seasonal angles)
 - **Michigan International Speedway (MIS)** race weekends (Irish Hills) — big seasonal driver of traffic, short-term rental interest, and "sell before/buy after race season" timing angles.
 - **Taste of the Irish Hills** — annual Chamber of Commerce food event (spring).

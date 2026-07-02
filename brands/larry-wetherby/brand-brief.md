@@ -32,6 +32,7 @@ Most agents are order-takers — they just open doors and take a cut. Real value
 ## YouTube Content (larrywetherby, individual video links only — channel/listing pages aren't fetchable)
 - One video found: "Home Buyer Tip: Don't Just Buy the House, Buy the Lifestyle" (youtube.com/shorts/6urAxXr04-8). Core message: ask about traffic levels and proximity to amenities before buying, look beyond your initial target area, and think about lifestyle fit, not just the house itself. Friendly, supportive tone, mentions serving Jackson, Lenawee, Hillsdale counties and Irish Hills.
 - This "buy the lifestyle, not just the house" angle is a strong, reusable theme, distinct from the waterfront/builder wedge, good for buyer-focused (rather than seller-focused) posts.
+- There's a **lake tour video series** (part of a YouTube playlist). Found so far: "Wamplers Lake Tour" — covers Wamplers Lake as a ~780-acre all-sports lake in the Irish Hills, good fishing year-round, Walter J. Hayes State Park, a campground, a boat launch, and local dining (Jerry's Pub, known for lake views/live entertainment). This is a strong repeatable content pillar: one post per lake in the area, pairing local lifestyle detail with a soft real-estate CTA. Send more videos from this playlist to build out the full list of lakes covered.
 - To pull more videos in, share individual video links (shorts or full videos) rather than the channel page, since the channel listing page isn't accessible.
 
 ## Local Content Hooks (Irish Hills / Brooklyn, MI events + seasonal angles)
